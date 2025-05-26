@@ -68,10 +68,10 @@
 
         sumbols {
             bindings = <
-&trans  &trans      &trans      &trans        &trans        &trans                    &trans             &trans        &trans        &trans          &trans         &trans
-&trans  &trans      &trans      &trans        &trans        &trans                    &kp MINUS          &kp PLUS      &kp EQUAL     &kp UNDERSCORE  &trans         &kp PIPE
-&trans  &kp LS(LT)  &kp LS(GT)  &kp LS(LBRC)  &kp LS(RBRC)  &trans                    &kp DOUBLE_QUOTES  &kp LS(LPAR)  &kp LS(RPAR)  &kp LBKT        &kp RBKT       &trans
-&trans  &trans      &trans      &trans        &trans        &trans  &trans    &trans  &trans             &trans        &trans        &trans          &kp BACKSLASH  &trans
+&trans  &trans      &trans      &trans        &trans        &trans                    &trans             &trans        &trans        &trans          &trans                &trans
+&trans  &trans      &trans      &trans        &trans        &trans                    &kp MINUS          &kp PLUS      &kp EQUAL     &kp UNDERSCORE  &trans                &kp PIPE
+&trans  &kp LS(LT)  &kp LS(GT)  &kp LS(LBRC)  &kp LS(RBRC)  &trans                    &kp DOUBLE_QUOTES  &kp LS(LPAR)  &kp LS(RPAR)  &kp LBKT        &kp RBKT              &trans
+&trans  &trans      &trans      &trans        &trans        &trans  &trans    &trans  &trans             &trans        &trans        &trans          &kp NON_US_BACKSLASH  &trans
                                 &trans        &trans        &trans  &trans    &trans  &trans             &trans        &trans
             >;
         };
