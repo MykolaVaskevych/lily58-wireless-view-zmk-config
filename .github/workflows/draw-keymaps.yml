@@ -4,6 +4,7 @@ on:
     paths:
       - "config/*.keymap"
       - "config/*.dtsi"
+      - "config/draw_config.yaml"
   workflow_dispatch:
 
 jobs:
@@ -13,7 +14,8 @@ jobs:
       contents: write
     with:
       keymap_patterns: "config/*.keymap"
-      config_path: ""
+      config_path: "config/draw_config.yaml"
       output_folder: "img" 
-      parse_args: "" 
-      draw_args: ""
+      parse_args: "--zmk-keymap" 
+      draw_args: "--separate-layers"
+      commit_message: "keymap-drawer: Update keymap visualizations"
