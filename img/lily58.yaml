@@ -13,7 +13,7 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
-  - ⇥
+  - TAB
   - Q
   - W
   - E
@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - {t: ▽, type: trans}
-  - SHIFT
+  - LEFT SHIFT
   - A
   - S
   - D
@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - CTRL
+  - LEFT CONTROL
   - Z
   - X
   - C
@@ -51,12 +51,12 @@ layers:
   - .
   - /
   - {t: ▽, type: trans}
-  - ALT
+  - LEFT ALT
   - {t: ▽, type: trans}
-  - ALT
-  - ⎵
-  - ⏎
-  - {t: Lower, type: held}
+  - LEFT ALT
+  - SPACE
+  - RET
+  - Farrows
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Farrows:
@@ -78,22 +78,22 @@ layers:
   - F3
   - F4
   - F5
-  - PRNT
-  - ⇟
-  - ⇞
-  - INS
+  - PRINTSCREEN
+  - PG DN
+  - PG UP
+  - INSERT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: F6, h: GUI}
-  - {t: F7, h: ALT}
-  - {t: F8, h: SFT}
-  - {t: F9, h: CTL}
+  - {t: F6, h: LEFT WIN}
+  - {t: F7, h: LEFT ALT}
+  - {t: F8, h: LEFT SHIFT}
+  - {t: F9, h: LCTRL}
   - F10
-  - ←
-  - ↓
-  - ↑
-  - →
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -105,8 +105,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ⇲
-  - ⇱
+  - END
+  - HOME
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -115,7 +115,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   sumbols:
@@ -144,10 +144,10 @@ layers:
   - {t: ▽, type: trans}
   - '|'
   - {t: ▽, type: trans}
-  - {t: <, h: GUI}
-  - {t: '>', h: ALT}
-  - {t: '{', h: SFT}
-  - {t: '}', h: CTL}
+  - {t: <, h: LEFT GUI}
+  - {t: '>', h: LEFT ALT}
+  - {t: '{', h: LEFT SHIFT}
+  - {t: '}', h: LCTRL}
   - {t: ▽, type: trans}
   - '"'
   - Sft+(
@@ -171,20 +171,77 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  bluetooth: ['', BT0, BT1, BT2, BT3, BT4, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
-    '', '', '', '', '', '', BTCLR, '', '', '', '', '', '', '', '', '', '', BT+, BT-, '', '', '']
+  bluetooth:
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT NXT
+  - BT PRV
+  - ''
+  - ''
+  - ''
 combos:
 - p: [5, 6]
-  k: {t: Gaming, type: toggle}
+  k: {t: Base, h: toggle}
 - p: [17, 18]
-  k: {t: BT, type: toggle}
+  k: {t: bluetooth, h: toggle}
 - p: [0, 1]
-  k: BOOT
+  k: '&bootloader'
 - p: [10, 11]
-  k: BOOT
+  k: '&bootloader'
