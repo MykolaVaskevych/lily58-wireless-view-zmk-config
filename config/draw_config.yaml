@@ -138,20 +138,19 @@ draw_config:
 
 parse_config:
   # ZMK parsing
-  zmk_version: 0.1
   preprocess: true
   
-  # Layer configuration - matching your actual keymap
+  # Layer names - as a list
   layer_names:
-    "0": "Base"
-    "1": "Arrows" 
-    "2": "Symbols"
-    "3": "Gaming"
-    "4": "Bluetooth"
+    - "Base"
+    - "Arrows" 
+    - "Symbols"
+    - "Gaming"
+    - "Bluetooth"
   
   # Labels
   sticky_label: "sticky"
-  toggle_label: "tog"
+  toggle_label: "toggle"
   trans_legend:
     tap: "▽"
     type: "trans"
@@ -168,7 +167,7 @@ parse_config:
     "&mt RIGHT_ALT L": { t: "L", h: "ALT" }
     "&mt LEFT_WIN SEMICOLON": { t: ";", h: "GUI" }
     "&mt LEFT_WIN SEMI": { t: ";", h: "GUI" }
-    # Other mod-taps
+    # Other mod-taps in symbols layer
     "&mt LEFT_GUI LESS_THAN": { t: "<", h: "GUI" }
     "&mt LEFT_ALT GREATER_THAN": { t: ">", h: "ALT" }
     "&mt LEFT_SHIFT LBRC": { t: "{", h: "SFT" }
@@ -195,12 +194,9 @@ parse_config:
     "&bt BT_NXT": "BT+"
     "&bt BT_PRV": "BT-"
   
-  # Clean, minimal keycodes
+  # Keycode mappings for cleaner display
   zmk_keycode_map:
-    # Letters stay as is
-    # Numbers stay as is
-    
-    # Modifiers - minimal
+    # Modifiers
     LCTRL: "⌃"
     RCTRL: "⌃"
     LALT: "⌥"
@@ -300,7 +296,7 @@ parse_config:
     SLCK: "SCRL"
     NLCK: "NUM"
     
-    # Short versions for long names
+    # Short versions
     BACKSPACE: "BKSP"
     SLASH: "/"
     BACKSLASH: "\\"
@@ -308,7 +304,3 @@ parse_config:
     RIGHT_BRACKET: "]"
     UNDERSCORE: "_"
     NON_US_BACKSLASH: "\\"
-    
-  # Combo configuration
-  zmk_combos:
-    enabled: true
