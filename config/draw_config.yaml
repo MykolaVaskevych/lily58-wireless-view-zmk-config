@@ -44,27 +44,71 @@ parse_config:
   toggle_label: "toggle"
   trans_legend:
     type: "trans"
+    tap: "▽"
     align: "center"
+  
+  # Define layer names to match your keymap
+  layer_names:
+    0: "Default"
+    1: "Farrows"
+    2: "Symbols"
+    3: "Gaming"
+    4: "Bluetooth"
+  
+  # Parse mod-tap behaviors properly
+  zmk_combos:
+    # This ensures combos are parsed correctly
+    parse: true
+  
+  # Define how to parse ZMK behaviors
+  zmk_behaviors:
+    "&mt":
+      type: "mod_tap"
+      parse_fn: "zmk_mod_tap"
+    "&gresc":
+      type: "mod_tap"
+      tap: "ESC"
+      hold: "GRAVE"
+    "&tog":
+      type: "layer_toggle"
+    "&mo":
+      type: "momentary_layer"
+    "&bootloader":
+      type: "bootloader"
+      tap: "BOOT"
+  
+  # Mod-tap parsing for home row mods
+  mod_tap_labels:
+    LEFT_WIN: "GUI"
+    RIGHT_WIN: "GUI"
+    LEFT_ALT: "ALT"
+    RIGHT_ALT: "ALT"
+    LEFT_SHIFT: "SHFT"
+    RIGHT_SHIFT: "SHFT"
+    LCTRL: "CTRL"
+    RCTRL: "CTRL"
+  
   zmk_keycode_map:
     GRAVE: "`"
     TILDE: "~"
-    SPACE: "space"
-    TAB: "tab"
-    RET: "enter" 
-    ENTER: "enter"
-    ESC: "esc"
-    BSPC: "⌫"
-    DEL: "del"
-    LSHFT: "shift"
-    RSHFT: "shift" 
-    LCTRL: "ctrl"
-    RCTRL: "ctrl"
-    LALT: "alt"
-    RALT: "alt"
-    LGUI: "cmd"
-    RGUI: "cmd"
-    LEFT_WIN: "win"
-    RIGHT_WIN: "win"
+    SPACE: "SPC"
+    TAB: "TAB"
+    RET: "ENTER" 
+    ENTER: "ENTER"
+    ESC: "ESC"
+    BSPC: "BKSP"
+    BACKSPACE: "BKSP"
+    DEL: "DEL"
+    LSHFT: "SHFT"
+    RSHFT: "SHFT" 
+    LCTRL: "CTRL"
+    RCTRL: "CTRL"
+    LALT: "ALT"
+    RALT: "ALT"
+    LGUI: "GUI"
+    RGUI: "GUI"
+    LEFT_WIN: "WIN"
+    RIGHT_WIN: "WIN"
     LEFT: "←"
     RIGHT: "→" 
     UP: "↑"
@@ -84,12 +128,18 @@ parse_config:
     FSLH: "/"
     LBKT: "["
     RBKT: "]"
-    PG_UP: "pgup"
-    PG_DN: "pgdn"
-    HOME: "home"
-    END: "end"
-    INSERT: "ins"
-    PRINTSCREEN: "prt"
+    LPAR: "("
+    RPAR: ")"
+    LBRC: "{"
+    RBRC: "}"
+    LT: "<"
+    GT: ">"
+    PG_UP: "PGUP"
+    PG_DN: "PGDN"
+    HOME: "HOME"
+    END: "END"
+    INSERT: "INS"
+    PRINTSCREEN: "PRNT"
     F1: "F1"
     F2: "F2" 
     F3: "F3"
@@ -102,3 +152,12 @@ parse_config:
     F10: "F10"
     F11: "F11"
     F12: "F12"
+    # Bluetooth keycodes
+    BT_SEL: "BT"
+    BT_CLR: "BTCLR"
+    BT_NXT: "BT+"
+    BT_PRV: "BT-"
+    # Special keycodes
+    LC: "L⌃"
+    LS: "L⇧"
+    DOLLAR: "$"
