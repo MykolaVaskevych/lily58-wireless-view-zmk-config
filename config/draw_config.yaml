@@ -1,0 +1,36 @@
+# Config for keymap-drawer
+draw_config:
+  dark_mode: auto
+  key_w: 60.0
+  key_h: 54.0
+  split_gap: 30.0
+  combo_w: 24.0
+  combo_h: 18.0
+  key_rx: 6.0
+  n_columns: 10
+  separate_combo_diagrams: true
+  small_text: 9.0
+
+parse_config:
+  preprocess: true
+  sticky_label: sticky
+  toggle_label: toggle
+  
+  # Custom key mappings for better display
+  zmk_keycode_map:
+    GRAVE: "`"
+    SPACE: "␣"
+    TAB: "⇥"
+    RET: "⏎"
+    ENTER: "⏎"
+    ESC: "⎋"
+    BSPC: "⌫"
+    DEL: "⌦"
+    LSHFT: "⇧"
+    RSHFT: "⇧"
+    LCTRL: "⌃"
+    RCTRL: "⌃"
+    LALT: "⌥"
+    RALT: "⌥"
+    LGUI: "⌘"
+    RGUI: "⌘"
