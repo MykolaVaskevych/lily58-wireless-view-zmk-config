@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: lily58}
 layers:
   Base:
-  - {t: ESC, s: '`'}
+  - {t: Esc, s: '`'}
   - '1'
   - '2'
   - '3'
@@ -13,7 +13,7 @@ layers:
   - '9'
   - '0'
   - {t: ▽, type: trans}
-  - TAB
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - {t: ▽, type: trans}
-  - LEFT SHIFT
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - LEFT CONTROL
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
@@ -51,10 +51,10 @@ layers:
   - .
   - /
   - {t: ▽, type: trans}
-  - LEFT ALT
+  - $$mdi:apple-keyboard-option$$
   - {t: ▽, type: trans}
-  - LEFT ALT
-  - SPACE
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:keyboard-space$$
   - RET
   - Farrows
   - {t: ▽, type: trans}
@@ -86,14 +86,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: F6, h: LEFT WIN}
-  - {t: F7, h: LEFT ALT}
-  - {t: F8, h: LEFT SHIFT}
-  - {t: F9, h: LCTRL}
+  - {t: F7, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F8, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F9, h: '$$mdi:apple-keyboard-control$$'}
   - F10
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-up$$
+  - $$mdi:arrow-right$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -105,8 +105,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - END
-  - HOME
+  - End
+  - Home
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -144,10 +144,10 @@ layers:
   - {t: ▽, type: trans}
   - '|'
   - {t: ▽, type: trans}
-  - {t: <, h: LEFT GUI}
-  - {t: '>', h: LEFT ALT}
-  - {t: '{', h: LEFT SHIFT}
-  - {t: '}', h: LCTRL}
+  - {t: <, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '>', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '{', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '}', h: '$$mdi:apple-keyboard-control$$'}
   - {t: ▽, type: trans}
   - '"'
   - Sft+(
@@ -179,11 +179,11 @@ layers:
   - {t: ▽, type: trans}
   bluetooth:
   - ''
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '2', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '3', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth-connect$$', s: '4', type: sym_sub_text}
   - ''
   - ''
   - ''
@@ -220,7 +220,7 @@ layers:
   - ''
   - ''
   - ''
-  - BT CLR
+  - {t: '$$mdi:bluetooth-settings$$', s: '$$mdi:close-thick$$', type: sym_sub_text}
   - ''
   - ''
   - ''
@@ -231,17 +231,17 @@ layers:
   - ''
   - ''
   - ''
-  - BT NXT
-  - BT PRV
+  - {t: '$$mdi:bluetooth$$', s: '$$mdi:skip-next$$', type: sym_sub_text}
+  - {t: '$$mdi:bluetooth$$', s: '$$mdi:skip-previous$$', type: sym_sub_text}
   - ''
   - ''
   - ''
 combos:
 - p: [5, 6]
-  k: {t: Base, h: toggle}
+  k: {t: Base, h: '$$mdi:toggle-switch$$'}
 - p: [17, 18]
-  k: {t: bluetooth, h: toggle}
+  k: {t: bluetooth, h: '$$mdi:toggle-switch$$'}
 - p: [0, 1]
-  k: '&bootloader'
+  k: {t: '$$mdi:flash$$', h: '$$mdi:new-box$$', s: '$$mdi:micro-sd$$', type: sym_by_sym}
 - p: [10, 11]
-  k: '&bootloader'
+  k: {t: '$$mdi:flash$$', h: '$$mdi:new-box$$', s: '$$mdi:micro-sd$$', type: sym_by_sym}
