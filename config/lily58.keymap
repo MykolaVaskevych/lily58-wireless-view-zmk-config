@@ -79,11 +79,11 @@
 
         sumbols {
             bindings = <
-&trans  &trans                  &trans                     &trans               &trans          &trans                    &trans             &trans        &trans        &trans          &trans                &trans
-&trans  &trans                  &trans                     &trans               &trans          &trans                    &kp MINUS          &kp PLUS      &kp EQUAL     &kp UNDERSCORE  &trans                &kp PIPE
-&trans  &mt LEFT_GUI LESS_THAN  &mt LEFT_ALT GREATER_THAN  &mt LEFT_SHIFT LBRC  &mt LCTRL RBRC  &trans                    &kp DOUBLE_QUOTES  &kp LS(LPAR)  &kp LS(RPAR)  &kp LBKT        &kp RBKT              &trans
-&trans  &trans                  &trans                     &trans               &trans          &trans  &trans    &trans  &kp DOLLAR         &trans        &trans        &trans          &kp NON_US_BACKSLASH  &trans
-                                                           &trans               &trans          &trans  &trans    &trans  &trans             &trans        &trans
+&trans  &trans                  &trans                     &trans               &trans          &trans                       &trans             &trans        &trans        &trans          &trans                &trans
+&trans  &trans                  &trans                     &trans               &trans          &trans                       &kp MINUS          &kp PLUS      &kp EQUAL     &kp UNDERSCORE  &trans                &kp PIPE
+&trans  &mt LEFT_GUI LESS_THAN  &mt LEFT_ALT GREATER_THAN  &mt LEFT_SHIFT LBRC  &mt LCTRL RBRC  &kp TILDE                    &kp DOUBLE_QUOTES  &kp LS(LPAR)  &kp LS(RPAR)  &kp LBKT        &kp RBKT              &trans
+&trans  &trans                  &trans                     &trans               &trans          &trans     &trans    &trans  &kp DOLLAR         &trans        &trans        &trans          &kp NON_US_BACKSLASH  &trans
+                                                           &trans               &trans          &trans     &trans    &trans  &trans             &trans        &trans
             >;
         };
 
