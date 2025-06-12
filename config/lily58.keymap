@@ -27,6 +27,7 @@
         caps {
             bindings = <&caps_word>;
             key-positions = <27 53>;
+            layers = <0 1>;
         };
 
         mac_mode {
