@@ -34,20 +34,6 @@
             bindings = <&tog 1>;
             key-positions = <43 42 53 54>;
         };
-
-        minecraft_pause {
-            bindings = <&minecraft_pause>;
-            key-positions = <3 22>;
-        };
-    };
-
-    macros {
-        minecraft_pause: minecraft_pause {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp F3 &kp P>;
-            label = "MINECRAFT_PAUSE";
-        };
     };
 
     keymap {
