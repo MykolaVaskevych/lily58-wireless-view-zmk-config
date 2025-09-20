@@ -36,6 +36,15 @@
         };
     };
 
+    macros {
+        minecraft_pause: minecraft_pause {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F3 &kp P>;
+            label = "MINECRAFT_PAUSE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
