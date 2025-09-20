@@ -34,6 +34,11 @@
             bindings = <&tog 1>;
             key-positions = <43 42 53 54>;
         };
+
+        minecraft_pause {
+            bindings = <&minecraft_pause>;
+            key-positions = <3 22>;
+        };
     };
 
     macros {
